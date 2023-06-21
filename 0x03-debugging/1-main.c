@@ -13,8 +13,8 @@ int main(void)
 
 	i = 0;
 
-	/*{*/
 	/*while*/
+	/*{*/
 	/*putchar*/
 	/*}*/
 
