@@ -14,8 +14,8 @@ int main(void)
 	i = 0;
 
 	/**
-	* this is the line that causes infinite loop
 	*
+	* this is the line that causes infinite loop
 	*/
 
 	printf("Infinite loop avoided! \\o/\n");
