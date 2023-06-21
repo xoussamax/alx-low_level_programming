@@ -14,8 +14,8 @@ int main(void)
 	i = 0;
 
 	/**
-	*
-	* this is the line that causes infinite loop
+	* while
+	* and putchar
 	*/
 
 	printf("Infinite loop avoided! \\o/\n");
