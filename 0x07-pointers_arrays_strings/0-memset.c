@@ -17,12 +17,21 @@ char *_memset(char *s, char b, unsigned int n)
 
 	return (s);
 }
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	char str[6] = "Hello";
-	char *result = _memset(str, 'A', 5);
+    char buffer[5];
+    char *result;
 
-	printf("Result: %s\n", result);
+    result = _memset(buffer, 'A', sizeof(buffer));
 
-	return (0);
+    for (unsigned int i = 0; i < sizeof(buffer); i++)
+        putchar(buffer[i]);
+
+    return (0);
 }
