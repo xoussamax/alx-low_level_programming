@@ -16,12 +16,12 @@ char *_memset(char *s, char b, unsigned int n)
 
 	return (s);
 }
-int main()
+int main(void)
 {
-    char str[6] = "Hello";
-    char* result = _memset(str, 'A', 5);
+	char str[6] = "Hello";
+	char *result = _memset(str, 'A', 5);
 
-    printf("Result: %s\n", result);
+	printf("Result: %s\n", result);
 
-    return (0);
+	return (0);
 }
