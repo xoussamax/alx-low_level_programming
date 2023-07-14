@@ -23,7 +23,7 @@ int is_positive_number(char *str)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (str[i] != '\0' && str[i] != '\n')
 	{
 		if (str[i] < '0' || str[i] > '9')
 			return (0);
@@ -31,6 +31,25 @@ int is_positive_number(char *str)
 	}
 
 	return (1);
+}
+
+/**
+ * remove_newline - Removes the newline character from a string.
+ * @str: The string to modify.
+ */
+void remove_newline(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		if (str[i] == '\n')
+		{
+			str[i] = '\0';
+			return;
+		}
+		i++;
+	}
 }
 
 /**
@@ -45,12 +64,12 @@ int main(void)
 
 	printf("Enter the first positive number: ");
 	fgets(num1_str, sizeof(num1_str), stdin);
-	num1_str[strcspn(num1_str, "\n")] = '\0'; /* Remove newline character */
+	remove_newline(num1_str);
 	num1 = atoi(num1_str);
 
 	printf("Enter the second positive number: ");
 	fgets(num2_str, sizeof(num2_str), stdin);
-	num2_str[strcspn(num2_str, "\n")] = '\0'; /* Remove newline character */
+	remove_newline(num2_str);
 	num2 = atoi(num2_str);
 
 	if (!is_positive_number(num1_str) || !is_positive_number(num2_str)
