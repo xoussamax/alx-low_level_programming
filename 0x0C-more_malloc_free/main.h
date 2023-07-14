@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
-int _putchar();
-void *malloc_checked();
+int _put();
+void *malloc();
 
 #endif
 
