@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-void kkk(kk);
+
+int _putchar();
+void *malloc_checked();
+
 #endif
 
