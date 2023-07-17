@@ -2,9 +2,9 @@
 #define DOG_H
 struct dog /*- Represents information about a dog.*/
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 #endif
