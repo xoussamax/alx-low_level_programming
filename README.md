@@ -1,1 +1,1 @@
-This repository contains all the C programming projects.
+0x1C. C - Makefiles
